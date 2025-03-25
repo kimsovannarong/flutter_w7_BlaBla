@@ -15,7 +15,13 @@ class RidePreference {
       required this.departureDate,
       required this.arrival,
       required this.requestedSeats});
-
+  @override
+  bool operator == (Object other){
+    if(identical(this, other)) return true;
+    return other is RidePreference && other.departure == departure && other .arrival==arrival;
+  }
+  @override
+  int get hashCode =>departure.hashCode^departureDate.hashCode^arrival.hashCode^requestedSeats.hashCode;
   @override
   String toString() {
     return 'RidePref(departure: ${departure.name}, '
@@ -23,4 +29,5 @@ class RidePreference {
         'arrival: ${arrival.name}, '
         'requestedSeats: $requestedSeats)';
   }
+  
 }
