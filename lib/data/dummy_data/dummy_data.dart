@@ -1,7 +1,11 @@
-import '../model/location/locations.dart';
-import '../model/ride/ride.dart';
-import '../model/ride/ride_pref.dart';
-import '../model/user/user.dart';
+
+
+
+import 'package:week_3_blabla_project/model/location/locations.dart';
+import 'package:week_3_blabla_project/model/ride/ride.dart';
+import 'package:week_3_blabla_project/model/ride/ride_pref.dart';
+
+import '../../model/user/user.dart';
 import 'dart:math';
 
 final Random random = Random();
